@@ -1,0 +1,106 @@
+/* Define the scrolling window, best left alone unless you want scroll area less than full-screen */
+
+.window {
+      width:1024px;
+      height:768px;
+      overflow: auto;
+}
+
+/* Put your styles here */
+
+body {
+	margin:0;
+ 	background: #eee;
+	color: #111;
+	font-size: 1.5em;
+	line-height: 1.6em;
+}
+
+a, a:active, a:visited {
+  	color: #99f;
+}
+
+.content {
+    padding: 60px 0 0;
+    /* to avoid overlapping the fixed 'close' button on the widget, 
+    content requires a minimum padding-top: 30px; padding-left: 30px; */
+}
+
+.heading {
+  background: #4d7123;
+}
+
+.content-area {
+  height: 500px;
+  overflow:scroll;
+}
+
+.classlist{}
+.classlist .repeated-item {width:100%; position: relative; clear:both;}
+.classlist .class-name{float: left; width:100px;}
+.classlist .class-description{float: left; width:500px;}
+.classlist .class-credits{float: left; width:100px;}
+
+
+/*
+  We're using CSS transitions for when
+  the enter and move events are triggered
+  for the element that has the .repeated-item
+  class
+*/
+.repeated-item {display:block;}
+
+.repeated-item.ng-enter, .repeated-item.ng-move {
+  -webkit-transition:0.5s linear all;
+  -moz-transition:0.5s linear all;
+  -o-transition:0.5s linear all;
+  transition:0.5s linear all;
+  opacity:0;
+}
+
+/*
+ The ng-enter-active and ng-move-active
+ are where the transition destination properties
+ are set so that the animation knows what to
+ animate.
+*/
+.repeated-item.ng-enter.ng-enter-active,
+.repeated-item.ng-move.ng-move-active {
+  opacity:1;
+}
+
+/*
+  We're using CSS keyframe animations for when
+  the leave event is triggered for the element
+  that has the .repeated-item class
+*/
+.repeated-item.ng-leave {
+  -webkit-animation:0.5s my_animation;
+  -moz-animation:0.5s my_animation;
+  -o-animation:0.5s my_animation;
+  animation:0.5s my_animation;
+}
+
+@keyframes my_animation {
+  from { opacity:1; }
+  to { opacity:0; }
+}
+
+/*
+  Unfortunately each browser vendor requires
+  its own definition of keyframe animation code...
+*/
+@-webkit-keyframes my_animation {
+  from { opacity:1; }
+  to { opacity:0; }
+}
+
+@-moz-keyframes my_animation {
+  from { opacity:1; }
+  to { opacity:0; }
+}
+
+@-o-keyframes my_animation {
+  from { opacity:1; }
+  to { opacity:0; }
+}
