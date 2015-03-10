@@ -8,34 +8,37 @@
 
   <script type="text/javascript" src="AppleClasses/AppleWidget.js"></script>
   <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <link rel="stylesheet" type="text/css" href="main.css" />
   <link rel="stylesheet" href="css/foundation.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
   <script type='text/javascript' src='js/angular/angular.js' charset='utf-8'></script>
   <script type='text/javascript' src='js/angular/nganimate.js' charset='utf-8'></script>
   <script src="js/libs/modernizr.js"></script>
 </head>
-<body>
-<div class="window" ng-controller="menuCtrl">
+<body ng-controller="classCtrl">
+<div class="window">
   <div class="heading">
-    uvu
-    <div class="search-dropdown">
-      Track:
-      <select ng-model="filterItem.classes" ng-options="item.name for item in filterOptions.classes">
-      </select>
-    </div>
+    <img class="logo" src="images/dgm-logo.png" />
   </div>
   <div class="content-area">
     <div class="classlist">
-      <div ng-repeat="class in classes | filter:customFilter" class="repeated-item">
+      <div ng-repeat="class in classes | filter:customFilter" class="class-item" ng-click="fireMe(class)">
         <div class="class-name">{{class.classid}}</div>
-        <div class="class-description">{{class.description}}</div>
-        <div class="class-credits">{{class.credits}}</div>
+        <div class="class-title">{{class.title}}</div>
       
       </div>
     </div>
   </div>
 </div>
+
+
+<div id="classModal" class="reveal-modal" data-reveal>
+  <h2>{{modalData.title}}</h2>
+  <p class="info">{{modalData.description}}</p>
+  <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
   <!-- Load Scrolling Javascript -->
   <script src="js/libs/jquery-1.7.2.min.js"></script>
   <script src="js/jquery.mousewheel.min.js"></script>

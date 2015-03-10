@@ -14,6 +14,8 @@ body {
 	color: #111;
 	font-size: 1.5em;
 	line-height: 1.6em;
+  background: rgb(24,24,24);
+  color:#fefefe;
 }
 
 a, a:active, a:visited {
@@ -27,20 +29,86 @@ a, a:active, a:visited {
 }
 
 .heading {
-  background: #4d7123;
+  background: rgb(24,24,24);
+  height: 100px;
+}
+
+.heading .logo {
+  max-width: 200px;
+  padding-left:50px;
+  padding-top:30px;
 }
 
 .content-area {
-  height: 500px;
-  overflow:scroll;
+  height: 670px;
+  overflow: scroll;
 }
 
 .classlist{}
-.classlist .repeated-item {width:100%; position: relative; clear:both;}
-.classlist .class-name{float: left; width:100px;}
-.classlist .class-description{float: left; width:500px;}
-.classlist .class-credits{float: left; width:100px;}
+.classlist .class-item {
+  width: 90%;
+  position: relative;
+  outline: 1px solid #333333;
+  background: rgb(58, 68, 12);
+  background-size: cover;
+  height: 200px;
+  margin: 17px auto;
+}
+.classlist .class-name{
+  position: relative;
+  top: 90px;
+  border-bottom: 1px solid #fff;
+  margin: 6px 22px;
+  font-weight: 100;
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+.classlist .class-title{
+  position: relative;
+  top: 94px;
+  font-weight: 100;
+  margin: 0 22px;
+}
 
+
+#classModal {}
+#classModal p.info {color:#333;}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  color:#dd1b16;
+}
+
+.example{
+  padding: 1em;
+  max-width:768px;
+}
+
+.code{
+  padding: 2em 0;
+  background:white;
+}
+
+.code img{
+  max-width:100%;
+  height:auto;
+  margin:0 auto 4em;
+  display:block;
+  padding:0;
+  border-radius:5px;
+  -webkit-border-radius:5px;
+  --moz-border-radius: 5px;
+}
+
+input{
+  font-size:24px;
+}
 
 /*
   We're using CSS transitions for when
@@ -68,6 +136,7 @@ a, a:active, a:visited {
 .repeated-item.ng-move.ng-move-active {
   opacity:1;
 }
+
 
 /*
   We're using CSS keyframe animations for when
