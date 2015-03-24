@@ -1,7 +1,18 @@
-Goals:
+# UVU Class List Widget #
 
-Grunt Build -
+This is a self containted node development environement that can be used to develop class widgets for UVU's class catalog.
 
+## Setup 
+
+* Clone the repo
+
+
+
+## Goals:
+
+### Grunt Build -
+
+This can be 
 Start Server
 Check for Errors (JS?, Build?)
 On Save -  Recompile LESS
