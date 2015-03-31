@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="uvuCatalog">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Remove automatic highlighting of telephone numbers -->
+  <meta name="format-detection" content="telephone=no">
+
+  <script type="text/javascript" src="AppleClasses/AppleWidget.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
+  <link rel="stylesheet" href="css/foundation.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script type='text/javascript' src='js/angular/angular.js' charset='utf-8'></script>
+  <script type='text/javascript' src='js/angular/nganimate.js' charset='utf-8'></script>
+  <script src="js/libs/modernizr.js"></script>
+</head>
+
+
+<body ng-controller="classCtrl">
+
+<div class="window">
+
+  <div class="content-area">
+    <div data-magellan-expedition="fixed">
+      <dl class="sub-nav">
+        <dd data-magellan-arrival="build"><a href="#build">Build with HTML</a></dd>
+        <dd data-magellan-arrival="js"><a href="#js">Arrival 2</a></dd>
+      </dl>
+    </div>
+    <div class="classlist">
+      <div ng-repeat="class in classes | filter:customFilter" class="class-item" ng-click="fireMe(class)">
+        <div class="class-name">{{class.classid}}</div>
+        <div class="class-title">{{class.title}}</div>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="classModal" class="reveal-modal" data-reveal>
+  <h2>{{modalData.title}}</h2>
+  <p class="info">{{modalData.description}}</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+  <!-- Load Scrolling Javascript -->
+  <script src="js/libs/jquery-1.7.2.min.js"></script>
+  <script src="js/jquery.mousewheel.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.min.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- Load Custom Javascript -->
+  <script type="text/javascript" src="js/script.js" charset="utf-8"></script>
+</body>
+</html>
