@@ -179,7 +179,8 @@ angular.module('uvuCatalog', ['ngAnimate'])
       "track"       : "Animation",
       "year"        : "2",
       "description" : "Skate ipsum dolor sit amet, shoveit fast plant grind full-cab Shoe Goo griptape 360 nosegrind. Disaster grab rad hurricane shoveit fakie out slam. Heel flip feeble crooked grind boneless masonite launch ramp rails. Steps blunt 180 opposite footed finger flip gnarly fakie. Half-flip tail wheels nollie nosepicker rail axle set. Nose grab bigspin risers wheels drop in camel back Wallows judo air. Flail lipslide casper speed wobbles transition NoMeansNo hanger kingpin. Rip grip kidney locals goofy footed spine skate key nose slide. Acid drop birdie mini ramp rad Japan air hip judo air. G-turn gap Transworld transfer snake fakie out coping hang ten. Acid drop freestyle lipslide steps hang-up fast plant Japan air. Rail slide pressure flip nose slide bank mini ramp transition shinner. Andy Levy switch 900 pump mongo cess slide locals manual.",
-      "core"        : true
+      "core"        : true,
+      "portfolioReview" : "images/dgm-logo.png"
     },
     {
       "classid"     : "DGM  2250",

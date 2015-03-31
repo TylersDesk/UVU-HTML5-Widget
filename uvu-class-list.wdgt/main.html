@@ -28,11 +28,12 @@
   </div>
   <div class="content-area">
     <div class="classlist">
-      <div ng-repeat="class in classes | filter:yearFilter |filter:customFilter" class="class-item" ng-click="fireMe(class)">
-        <div class="class-name">{{class.classid}}</div>
-        <div class="class-title">{{class.title}}</div>
-      
-      </div>
+      <div ng-repeat="class in classes | filter:yearFilter |filter:customFilter" ng-click="fireMe(class)">
+        <div  class="class-item">
+          <div class="class-name">{{class.classid}}</div>
+          <div class="class-title">{{class.title}}</div>
+        </div>
+        <img class="portfolioReview" src="{{class.portfolioReview}}" alt="" />
     </div>
   </div>
 </div>

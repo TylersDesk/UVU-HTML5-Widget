@@ -238,3 +238,9 @@ span.pop-up-categories{
     font-weight: 400;
     color: #fff;
 }
+
+img.portfolioReview{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
