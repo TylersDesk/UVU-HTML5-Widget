@@ -8,7 +8,9 @@ module.exports = function(grunt) {
         options: {
           keepalive: true,
           base: 'public',
-          port:8080
+          port:8080,
+          index:'main.html',
+          open: true
         }
       }
     },
