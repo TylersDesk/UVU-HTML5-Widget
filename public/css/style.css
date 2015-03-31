@@ -173,3 +173,74 @@ input{
   from { opacity:1; }
   to { opacity:0; }
 }
+
+/*sam styling*/
+
+.pop-up-title{
+    color: #fff;
+}
+
+.pop-up-item{
+    width: 100%!important;
+    margin: 0!important;
+    margin-top: -6px!important;
+    padding: 0!important;
+}
+
+div#classModal.reveal-modal.open{
+    width: 90%!important;
+    padding: 0px!important;
+    background: rgb(10, 10, 10);
+}
+
+#classModal p.info{
+    width: 90%;
+    margin: auto;
+    color: #fff;
+    padding-top: 2%;
+    font-weight: 100;
+    color: #ddd;
+}
+
+.pop-up-body{
+    claer: both;
+    padding-bottom: 2%;
+}
+
+img.exit{
+    width: 18%;
+    float: right;
+    margin-top: 4%;
+}
+
+div.class-name.ng-binding{
+    font-weight: 500;
+}
+
+.heading{
+    width: 93%;
+}
+
+div.filters{
+    float: right;
+    padding-left: 50px;
+    padding-top: 24px;
+    font-weight: 100;
+    font-size: .7em;
+}
+
+div.filters span{
+    padding-left: 15px;
+}
+
+span.pop-up-categories{
+    font-size: 1.3em;
+    font-weight: 400;
+    color: #fff;
+}
+
+img.portfolioReview{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

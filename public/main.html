@@ -20,6 +20,17 @@
 
 <div class="window">
 
+  <div class="heading">
+    <img class="logo" src="images/dgm-logo.png" />
+      <div class="filters">
+      <span ng-click="yearFilter = {year:1}">Year 1</span>
+      <span ng-click="yearFilter = {year: 2}">Year 2</span>
+      <span ng-click="yearFilter = {year: 3}">Year 3</span>
+      <span ng-click="yearFilter = {year: 4}">Year 4</span>
+      <span ng-click="yearFilter = null">All</span>
+      </div>
+  </div>
+
   <div class="content-area">
     <div data-magellan-expedition="fixed">
       <dl class="sub-nav">
@@ -28,20 +39,35 @@
       </dl>
     </div>
     <div class="classlist">
-      <div ng-repeat="class in classes | filter:customFilter" class="class-item" ng-click="fireMe(class)">
-        <div class="class-name">{{class.classid}}</div>
-        <div class="class-title">{{class.title}}</div>
-      
-      </div>
+      <div ng-repeat="class in classes | filter:yearFilter |filter:customFilter" ng-click="fireMe(class)">
+        <div  class="class-item">
+          <div class="class-name">{{class.classid}}</div>
+          <div class="class-title">{{class.title}}</div>
+        </div>
+        <img class="portfolioReview" src="{{class.portfolioReview}}" alt="" />
     </div>
   </div>
 </div>
 
 
 <div id="classModal" class="reveal-modal" data-reveal>
-  <h2>{{modalData.title}}</h2>
-  <p class="info">{{modalData.description}}</p>
-  <a class="close-reveal-modal">&#215;</a>
+  <div class="classlist">
+  <div class="class-item pop-up-item">
+  <div class="class-name">{{modalData.classid}}</div>
+  <div class="class-title pop-up-title">{{modalData.title}}</div>
+  </div>
+  <div class="pop-up-body">
+  <p class="info"><span class="pop-up-categories">Credits</span> {{modalData.credits}}</p>
+      <p class="info"><span class="pop-up-categories">Semester:</span> {{modalData.semester}}</p>
+      <p class="info"><span class="pop-up-categories">Prerequisite:</span> {{modalData.prerequisite}}</p>
+      <p class="info"><span class="pop-up-categories">Description:</span> {{modalData.description}}</p>
+      <p class="info"><span class="pop-up-categories">Project(s):</span> {{modalData.projects}}</p>
+      <p class="info"><span class="pop-up-categories">Software Used:</span> {{modalData.software}}</p>
+      <p class="info"><span class="pop-up-categories">Technology Requirements:</span> {{modalData.technology}}</p>
+      <p class="info"><span class="pop-up-categories">Material Requirements:</span> {{modalData.materials}}</p>
+  </div>
+  <a class="close-reveal-modal"><img class="exit" src="images/exit.png" alt="exit" /></a>
+  </div>
 </div>
 
 
