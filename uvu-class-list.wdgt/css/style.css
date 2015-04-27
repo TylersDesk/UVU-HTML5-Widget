@@ -227,6 +227,7 @@ div.filters{
     padding-top: 24px;
     font-weight: 100;
     font-size: .7em;
+    width: 43%;
 }
 
 div.filters span{
@@ -243,4 +244,33 @@ img.portfolioReview{
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+article{
+    width: 25%;
+    float: left;
+}
+
+div.popUpPositioning{
+    margin-left: 4%;
+}
+
+span.categoryItems{
+    border: 1px solid;
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin: 5px 0;
+    line-height: 2.3em;
+}
+
+img.portfolio-review-navigation{
+    max-width: 45px;
+    padding-left: 15px;
+}
+
+img#techRequired{
+    width: 20%;
+    float: left;
+    margin-right: 10px;
+    color: #aaad00;
 }

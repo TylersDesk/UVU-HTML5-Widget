@@ -25,6 +25,7 @@
       <div class="filters">
       <span ng-click="yearFilter = {year:1}">Year 1</span>
       <span ng-click="yearFilter = {year: 2}">Year 2</span>
+      <img class="portfolio-review-navigation" src="images/svgs/portfolio-review-icon.svg" alt="portfolio review icon" />
       <span ng-click="yearFilter = {year: 3}">Year 3</span>
       <span ng-click="yearFilter = {year: 4}">Year 4</span>
       <span ng-click="yearFilter = null">All</span>
@@ -32,12 +33,6 @@
   </div>
 
   <div class="content-area">
-    <div data-magellan-expedition="fixed">
-      <dl class="sub-nav">
-        <dd data-magellan-arrival="build"><a href="#build">Build with HTML</a></dd>
-        <dd data-magellan-arrival="js"><a href="#js">Arrival 2</a></dd>
-      </dl>
-    </div>
     <div class="classlist">
       <div ng-repeat="class in classes | filter:yearFilter |filter:customFilter" ng-click="fireMe(class)">
         <div  class="class-item">
@@ -50,7 +45,7 @@
 </div>
 
 
-<div id="classModal" class="reveal-modal" data-reveal>
+<div id="classModal" class="reveal-modal" data-reveal style="padding-bottom: 30px!important;">
   <div class="classlist">
   <div class="class-item pop-up-item">
   <div class="class-name">{{modalData.classid}}</div>
@@ -61,12 +56,13 @@
       <p class="info"><span class="pop-up-categories">Semester:</span> {{modalData.semester}}</p>
       <p class="info"><span class="pop-up-categories">Prerequisite:</span> {{modalData.prerequisite}}</p>
       <p class="info"><span class="pop-up-categories">Description:</span> {{modalData.description}}</p>
-      <p class="info"><span class="pop-up-categories">Project(s):</span> {{modalData.projects}}</p>
-      <p class="info"><span class="pop-up-categories">Software Used:</span> {{modalData.software}}</p>
-      <p class="info"><span class="pop-up-categories">Technology Requirements:</span> {{modalData.technology}}</p>
-      <p class="info"><span class="pop-up-categories">Material Requirements:</span> {{modalData.materials}}</p>
-  </div>
-  <a class="close-reveal-modal"><img class="exit" src="images/exit.png" alt="exit" /></a>
+     <div class="popUpPositioning">
+      <article><p class="info"><span class="pop-up-categories">Tech Required<br /></span></p> <img src="" id="techRequired" alt="technologyRequired" /><p>{{modalData.technology}}</p></article>
+      <article><p class="info"><span class="pop-up-categories">Material Required<br /></span> <span class="categoryItems">{{modalData.materials}}</span></p></article>
+      <article><p class="info"><span class="pop-up-categories">Software Used<br /></span> <span class="categoryItems">{{modalData.software}}</span></p></article>
+      <article><p class="info"><span class="pop-up-categories">Projects:<br /></span> <span class="categoryItems">{{modalData.projects}}</span></p></article>
+     </div>
+  <a class="close-reveal-modal"><img class="exit" src="images/svgs/exit.svg" alt="exit" /></a>
   </div>
 </div>
 

@@ -180,7 +180,7 @@ angular.module('uvuCatalog', ['ngAnimate'])
       "year"        : "2",
       "description" : "Skate ipsum dolor sit amet, shoveit fast plant grind full-cab Shoe Goo griptape 360 nosegrind. Disaster grab rad hurricane shoveit fakie out slam. Heel flip feeble crooked grind boneless masonite launch ramp rails. Steps blunt 180 opposite footed finger flip gnarly fakie. Half-flip tail wheels nollie nosepicker rail axle set. Nose grab bigspin risers wheels drop in camel back Wallows judo air. Flail lipslide casper speed wobbles transition NoMeansNo hanger kingpin. Rip grip kidney locals goofy footed spine skate key nose slide. Acid drop birdie mini ramp rad Japan air hip judo air. G-turn gap Transworld transfer snake fakie out coping hang ten. Acid drop freestyle lipslide steps hang-up fast plant Japan air. Rail slide pressure flip nose slide bank mini ramp transition shinner. Andy Levy switch 900 pump mongo cess slide locals manual.",
       "core"        : true,
-      "portfolioReview" : "images/dgm-logo.png"
+      "portfolioReview" : "images/Portfolio-review-box.png"
     },
     {
       "classid"     : "DGM  2250",
@@ -207,7 +207,7 @@ angular.module('uvuCatalog', ['ngAnimate'])
       "prerequisite": "DGM 1110",
       "projects"    : "Multipage vacation website",
       "software"    : "Text Wrangler (Macintosh) or Notepad++ (Windows)",
-      "technology"  : "Laptop or computer and Internet access",
+      "technology"  : "Laptop",
       "materials"   : "Web hosting account",
       "track"       : "Animation",
       "year"        : "4",
@@ -215,5 +215,15 @@ angular.module('uvuCatalog', ['ngAnimate'])
       "core"        : true
     }
   ];
+
+
+      $scope.svgIcons = function(tech) {
+          if (tech = "Laptop") {
+              tech =  document.getElementById("techRequired").src="images/svgs/laptop.svg";
+              return tech;
+          }
+      };
+
+        $scope.svgIcons($scope.classes.technology);
 
   });

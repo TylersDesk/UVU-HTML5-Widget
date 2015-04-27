@@ -2,6 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c18004a-f311-40df-a6ec-94ee7d94311f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uvu-class-list.wdgt/images/svgs/cloudStorage.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uvu-class-list.wdgt/images/svgs/desktop.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uvu-class-list.wdgt/images/svgs/dslr.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uvu-class-list.wdgt/images/svgs/exit.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uvu-class-list.wdgt/images/svgs/gameController.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uvu-class-list.wdgt/images/svgs/hardDrive.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uvu-class-list.wdgt/images/svgs/headphones.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uvu-class-list.wdgt/images/svgs/hosting.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uvu-class-list.wdgt/images/svgs/laptop.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uvu-class-list.wdgt/images/svgs/mic.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uvu-class-list.wdgt/images/svgs/phone.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uvu-class-list.wdgt/images/svgs/portfolio-review-icon.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uvu-class-list.wdgt/images/svgs/storage.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uvu-class-list.wdgt/images/svgs/tablet.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uvu-class-list.wdgt/images/svgs/wacomPen.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/UVU-HTML5-Widget.iml" afterPath="$PROJECT_DIR$/.idea/UVU-HTML5-Widget.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uvu-class-list.wdgt/js/app.js" afterPath="$PROJECT_DIR$/uvu-class-list.wdgt/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uvu-class-list.wdgt/main.html" afterPath="$PROJECT_DIR$/uvu-class-list.wdgt/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uvu-class-list.wdgt/css/style.css" afterPath="$PROJECT_DIR$/uvu-class-list.wdgt/css/style.css" />
@@ -28,21 +44,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/uvu-class-list.wdgt/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27525622" vertical-offset="337" max-vertical-offset="1185">
-              <caret line="35" column="78" selection-start-line="35" selection-start-column="78" selection-end-line="35" selection-end-column="78" />
+            <state vertical-scroll-proportion="-10.541667" vertical-offset="632" max-vertical-offset="1290">
+              <caret line="59" column="122" selection-start-line="59" selection-start-column="110" selection-end-line="59" selection-end-column="122" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/uvu-class-list.wdgt/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3058" max-vertical-offset="3765">
-              <caret line="245" column="1" selection-start-line="245" selection-start-column="1" selection-end-line="245" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.6886792" vertical-offset="3655" max-vertical-offset="4230">
+              <caret line="268" column="1" selection-start-line="268" selection-start-column="1" selection-end-line="268" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -51,11 +67,9 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/uvu-class-list.wdgt/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2456" max-vertical-offset="3360">
-              <caret line="182" column="27" selection-start-line="182" selection-start-column="27" selection-end-line="182" selection-end-column="27" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="2813" max-vertical-offset="3420">
+              <caret line="221" column="67" selection-start-line="221" selection-start-column="67" selection-end-line="221" selection-end-column="67" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -73,17 +87,26 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/uvu-class-list.wdgt/test.json" />
         <option value="$PROJECT_DIR$/uvu-class-list.wdgt/js/app.js" />
-        <option value="$PROJECT_DIR$/uvu-class-list.wdgt/css/style.css" />
         <option value="$PROJECT_DIR$/uvu-class-list.wdgt/main.html" />
+        <option value="$PROJECT_DIR$/uvu-class-list.wdgt/css/style.css" />
       </list>
     </option>
   </component>
+  <component name="JsGruntFileManager">
+    <gruntfiles>
+      <GruntfileState>
+        <gruntfile-path>$PROJECT_DIR$/Gruntfile.js</gruntfile-path>
+      </GruntfileState>
+    </gruntfiles>
+    <initial>false</initial>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="67" />
-    <option name="y" value="28" />
+    <option name="x" value="73" />
+    <option name="y" value="69" />
     <option name="width" value="1300" />
-    <option name="height" value="825" />
+    <option name="height" value="650" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -111,6 +134,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -193,17 +217,70 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="svgs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UVU-HTML5-Widget" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UVU-HTML5-Widget" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uvu-class-list.wdgt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UVU-HTML5-Widget" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UVU-HTML5-Widget" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UVU-HTML5-Widget" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UVU-HTML5-Widget" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/DGM-Competency-Browser" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/APTscheduler" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
   </component>
@@ -269,9 +346,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="28" width="1300" height="825" extended-state="0" />
+    <frame x="73" y="69" width="1300" height="650" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -313,6 +391,78 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/uvu-class-list.wdgt/main.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1275">
+          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uvu-class-list.wdgt/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3318" max-vertical-offset="4035">
+          <caret line="232" column="23" selection-start-line="232" selection-start-column="23" selection-end-line="232" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uvu-class-list.wdgt/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1725" max-vertical-offset="3360">
+          <caret line="182" column="27" selection-start-line="182" selection-start-column="27" selection-end-line="182" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uvu-class-list.wdgt/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="1260">
+          <caret line="35" column="78" selection-start-line="35" selection-start-column="78" selection-end-line="35" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uvu-class-list.wdgt/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3675" max-vertical-offset="3765">
+          <caret line="245" column="1" selection-start-line="245" selection-start-column="1" selection-end-line="245" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uvu-class-list.wdgt/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2730" max-vertical-offset="3360">
+          <caret line="182" column="27" selection-start-line="182" selection-start-column="27" selection-end-line="182" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uvu-class-list.wdgt/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="1260">
+          <caret line="35" column="78" selection-start-line="35" selection-start-column="78" selection-end-line="35" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uvu-class-list.wdgt/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3675" max-vertical-offset="3765">
+          <caret line="245" column="1" selection-start-line="245" selection-start-column="1" selection-end-line="245" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uvu-class-list.wdgt/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2730" max-vertical-offset="3360">
+          <caret line="182" column="27" selection-start-line="182" selection-start-column="27" selection-end-line="182" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uvu-class-list.wdgt/main.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170">
           <caret line="48" column="52" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="52" />
           <folding />
@@ -331,9 +481,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2630" max-vertical-offset="3345">
           <caret line="209" column="6" selection-start-line="209" selection-start-column="6" selection-end-line="209" selection-end-column="6" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -357,9 +505,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2630" max-vertical-offset="3345">
           <caret line="209" column="6" selection-start-line="209" selection-start-column="6" selection-end-line="209" selection-end-column="6" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -377,28 +523,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uvu-class-list.wdgt/js/app.js">
+    <entry file="file://$PROJECT_DIR$/uvu-class-list.wdgt/test.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2456" max-vertical-offset="3360">
-          <caret line="182" column="27" selection-start-line="182" selection-start-column="27" selection-end-line="182" selection-end-column="27" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+          <caret line="0" column="8771" selection-start-line="0" selection-start-column="8771" selection-end-line="0" selection-end-column="8771" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uvu-class-list.wdgt/css/style.css">
+    <entry file="file://$PROJECT_DIR$/public/images/Portfolio-review-box.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uvu-class-list.wdgt/images/svgs/mic.svg">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3058" max-vertical-offset="3765">
-          <caret line="245" column="1" selection-start-line="245" selection-start-column="1" selection-end-line="245" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5340">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uvu-class-list.wdgt/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2813" max-vertical-offset="3420">
+          <caret line="221" column="67" selection-start-line="221" selection-start-column="67" selection-end-line="221" selection-end-column="67" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/uvu-class-list.wdgt/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27525622" vertical-offset="337" max-vertical-offset="1185">
-          <caret line="35" column="78" selection-start-line="35" selection-start-column="78" selection-end-line="35" selection-end-column="78" />
+        <state vertical-scroll-proportion="-10.541667" vertical-offset="632" max-vertical-offset="1290">
+          <caret line="59" column="122" selection-start-line="59" selection-start-column="110" selection-end-line="59" selection-end-column="122" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uvu-class-list.wdgt/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6886792" vertical-offset="3655" max-vertical-offset="4230">
+          <caret line="268" column="1" selection-start-line="268" selection-start-column="1" selection-end-line="268" selection-end-column="1" />
           <folding />
         </state>
       </provider>
