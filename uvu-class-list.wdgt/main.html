@@ -39,7 +39,6 @@
           <div class="class-name">{{class.courseID}}</div>
           <div class="class-title">{{class.name}}</div>
         </div>
-        <img class="portfolioReview" src="{{class.portfolioReview}}" alt="" />
     </div>
   </div>
 </div>
@@ -59,12 +58,12 @@
       <article><p class="info"><span class="pop-up-categories">Tech Required<br /></span></p>
          <div ng-repeat="tech in modalData.tech_required">
              <div style="display: none;">{{svgIcons(tech)}}</div>
-             <img src={{techImage}} id="techRequired" alt="technologyRequired" /><p class="info space">{{tech}}</p>
+             <embed src={{techImage}} id="techRequired"><p class="info space smaller">{{tech}}</p>
          </div>
       </article>
-      <article><p class="info"><span class="pop-up-categories">Material Required<br /></span> <span class="categoryItems">{{modalData.materials_used}}</span></p></article>
-      <article><p class="info"><span class="pop-up-categories">Software Used<br /></span> <span class="categoryItems">{{modalData.software_used}}</span></p></article>
-      <article><p class="info"><span class="pop-up-categories">Projects:<br /></span> <span class="categoryItems">{{modalData.projects}}</span></p></article>
+      <article><p class="info smaller"><span class="pop-up-categories">Material Required<br /></span> <span class="categoryItems">{{modalData.materials_used}}</span></p></article>
+      <article><p class="info smaller"><span class="pop-up-categories">Software Used<br /></span> <span class="categoryItems">{{modalData.software_used}}</span></p></article>
+      <article><p class="info smaller"><span class="pop-up-categories">Projects:<br /></span> <span class="categoryItems">{{modalData.projects}}</span></p></article>
      </div>
   <a class="close-reveal-modal"><img class="exit" src="images/svgs/exit.svg" alt="exit" /></a>
   </div>

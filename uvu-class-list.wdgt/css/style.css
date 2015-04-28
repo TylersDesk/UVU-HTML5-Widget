@@ -198,7 +198,7 @@ div#classModal.reveal-modal.open{
     margin: auto;
     color: #fff;
     padding-top: 2%;
-    font-weight: 100;
+    font-weight: 200;
     color: #ddd;
 }
 
@@ -208,7 +208,7 @@ div#classModal.reveal-modal.open{
 }
 
 img.exit{
-    width: 18%;
+    width: 48px;;
     float: right;
     margin-top: 4%;
 }
@@ -276,6 +276,14 @@ img#techRequired{
     max-height: 30px;
 }
 
+embed#techRequired{
+    width: 20%;
+    float: left;
+    margin-right: 10px;
+    color: #aaad00;
+    max-height: 30px;
+}
+
 img.goToWeb{
     width: 28px;
     float: right;
@@ -291,5 +299,9 @@ p.description{
 }
 
 span.coreClass{
+    font-size: .6em;
+}
+
+p.smaller{
     font-size: .6em;
 }
