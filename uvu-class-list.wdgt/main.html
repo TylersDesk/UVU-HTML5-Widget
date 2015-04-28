@@ -23,11 +23,11 @@
   <div class="heading">
     <img class="logo" src="images/dgm-logo.png" />
       <div class="filters">
-      <span ng-click="yearFilter = {year:1}">Year 1</span>
-      <span ng-click="yearFilter = {year: 2}">Year 2</span>
+      <span ng-click="yearFilter = {number: 'dgm1'}">Year 1</span>
+      <span ng-click="yearFilter = {number: 'dgm2'}">Year 2</span>
       <img class="portfolio-review-navigation" src="images/svgs/portfolio-review-icon.svg" alt="portfolio review icon" />
-      <span ng-click="yearFilter = {year: 3}">Year 3</span>
-      <span ng-click="yearFilter = {year: 4}">Year 4</span>
+      <span ng-click="yearFilter = {number: 'dgm3'}">Year 3</span>
+      <span ng-click="yearFilter = {number: 'dgm4'}">Year 4</span>
       <span ng-click="yearFilter = null">All</span>
       </div>
   </div>
@@ -36,8 +36,8 @@
     <div class="classlist">
       <div ng-repeat="class in classes | filter:yearFilter |filter:customFilter" ng-click="fireMe(class)">
         <div  class="class-item">
-          <div class="class-name">{{class.classid}}</div>
-          <div class="class-title">{{class.title}}</div>
+          <div class="class-name">{{class.courseID}}</div>
+          <div class="class-title">{{class.name}}</div>
         </div>
         <img class="portfolioReview" src="{{class.portfolioReview}}" alt="" />
     </div>
@@ -48,18 +48,22 @@
 <div id="classModal" class="reveal-modal" data-reveal style="padding-bottom: 30px!important;">
   <div class="classlist">
   <div class="class-item pop-up-item">
-  <div class="class-name">{{modalData.classid}}</div>
-  <div class="class-title pop-up-title">{{modalData.title}}</div>
+  <div class="class-name">{{modalData.courseID}}</div>
+  <div class="class-title pop-up-title">{{modalData.name}}<img class="goToWeb" src="images/svgs/goToWeb.svg" alt="go to web" /></div>
   </div>
   <div class="pop-up-body">
-  <p class="info"><span class="pop-up-categories">Credits</span> {{modalData.credits}}</p>
-      <p class="info"><span class="pop-up-categories">Semester:</span> {{modalData.semester}}</p>
-      <p class="info"><span class="pop-up-categories">Prerequisite:</span> {{modalData.prerequisite}}</p>
-      <p class="info"><span class="pop-up-categories">Description:</span> {{modalData.description}}</p>
+      <div style="display: none;">{{classStading(modalData.core_class)}}</div>
+      <p class="info"><span class="pop-up-categories">Course:</span> {{coreClass}}</p>
+      <p class="info description"><span class="pop-up-categories">Description:</span> {{modalData.description}}</p>
      <div class="popUpPositioning">
-      <article><p class="info"><span class="pop-up-categories">Tech Required<br /></span></p> <img src="" id="techRequired" alt="technologyRequired" /><p>{{modalData.technology}}</p></article>
-      <article><p class="info"><span class="pop-up-categories">Material Required<br /></span> <span class="categoryItems">{{modalData.materials}}</span></p></article>
-      <article><p class="info"><span class="pop-up-categories">Software Used<br /></span> <span class="categoryItems">{{modalData.software}}</span></p></article>
+      <article><p class="info"><span class="pop-up-categories">Tech Required<br /></span></p>
+         <div ng-repeat="tech in modalData.tech_required">
+             <div style="display: none;">{{svgIcons(tech)}}</div>
+             <img src={{techImage}} id="techRequired" alt="technologyRequired" /><p class="info space">{{tech}}</p>
+         </div>
+      </article>
+      <article><p class="info"><span class="pop-up-categories">Material Required<br /></span> <span class="categoryItems">{{modalData.materials_used}}</span></p></article>
+      <article><p class="info"><span class="pop-up-categories">Software Used<br /></span> <span class="categoryItems">{{modalData.software_used}}</span></p></article>
       <article><p class="info"><span class="pop-up-categories">Projects:<br /></span> <span class="categoryItems">{{modalData.projects}}</span></p></article>
      </div>
   <a class="close-reveal-modal"><img class="exit" src="images/svgs/exit.svg" alt="exit" /></a>
@@ -73,6 +77,7 @@
   <script src="js/jquery.mCustomScrollbar.min.js"></script>
   <script src="js/foundation.min.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
 
   <!-- Load Custom Javascript -->
   <script type="text/javascript" src="js/script.js" charset="utf-8"></script>

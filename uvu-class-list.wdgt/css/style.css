@@ -256,10 +256,10 @@ div.popUpPositioning{
 }
 
 span.categoryItems{
-    border: 1px solid;
+    /*border: 1px solid;
     padding: 5px 20px;
     border-radius: 20px;
-    margin: 5px 0;
+    margin: 5px 0;*/
     line-height: 2.3em;
 }
 
@@ -273,4 +273,23 @@ img#techRequired{
     float: left;
     margin-right: 10px;
     color: #aaad00;
+    max-height: 30px;
+}
+
+img.goToWeb{
+    width: 28px;
+    float: right;
+}
+
+p.space{
+    padding-bottom: 5px;
+}
+
+p.description{
+    padding-bottom: 15px;
+    padding-top: .7%!important;
+}
+
+span.coreClass{
+    font-size: .6em;
 }

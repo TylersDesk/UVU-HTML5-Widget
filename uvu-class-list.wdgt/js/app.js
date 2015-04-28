@@ -62,12 +62,12 @@ var sampleDataJson = {
   ]
 }
 
-angular.module('uvuCatalog', ['ngAnimate'])
+angular.module('uvuCatalog', ['ngAnimate', 'uvuCatalog.services'])
 
   .run(function() {
   })
 
-  .controller('classCtrl', function($scope){
+  .controller("classCtrl", ['$scope','coursesServices', function($scope, coursesServices){
 
 
     //Contains the filter options
@@ -84,7 +84,7 @@ angular.module('uvuCatalog', ['ngAnimate'])
     //Mapped to the model to filter
     $scope.filterItem = {
       classes: $scope.filterOptions.classes[0]
-    }
+    };
 
 
     //Custom filter - filter based on the rating selected
@@ -105,125 +105,77 @@ angular.module('uvuCatalog', ['ngAnimate'])
       $scope.modalData = modalClass;
     };
 
+        coursesServices.courses().then(function(data) {
+            //this will execute when the
+            //AJAX call completes.
+            $scope.classes = data;
+            console.log(data);
+        });
 
 
 
+     $scope.svgIcons = function(tech) {
+         console.log(tech);
 
-    $scope.classes = [
-    // Placeholder to copy from
-    // { 
-    //   "classid"        : "",
-    //   "title"       : "",
-    //   "crn"         : "",
-    //   "credits"     : "",
-    //   "description" : ""
-    // },
-    {
-      "classid"     : "COMP  301R",
-      "title"       : "Digital Lecture Series",
-      "credits"     : "3",
-      "semester"    : "Spring",
-      "prerequisite": "DGM 1110",
-      "projects"    : "Multipage vacation website",
-      "software"    : "Text Wrangler (Macintosh) or Notepad++ (Windows)",
-      "technology"  : "Laptop or computer and Internet access",
-      "materials"   : "Web hosting account",
-      "track"       : "Pre-req",
-      "year"        : "1",
-      "description" : "This course provides students with the fundamentals necessary to plan, design, develop, deploy, and critique a web site that includes images, sound, video, forms, and separates content from presentation. Requires students to demonstrate the fundamentals of web programming languages including HTML5 and CSS. Includes media queries as an introduction to responsive design. Culminates in a final project in which students will design and deploy their personal web site.",
-      "core"        : true
-    },
-    {
-      "classid"     : "DGM  2110",
-      "title"       : "Digital Motion Picture Essentials",
-      "crn"         : "4123123",
-      "credits"     : "3",
-      "semester"    : "Spring",
-      "prerequisite": "DGM 1110",
-      "projects"    : "Multipage vacation website",
-      "software"    : "Text Wrangler (Macintosh) or Notepad++ (Windows)",
-      "technology"  : "Laptop or computer and Internet access",
-      "materials"   : "Web hosting account",
-      "track"       : "Digital Audio",
-      "year"        : "1",
-      "description" : "Skate ipsum dolor sit amet, shoveit fast plant grind full-cab Shoe Goo griptape 360 nosegrind. Disaster grab rad hurricane shoveit fakie out slam. Heel flip feeble crooked grind boneless masonite launch ramp rails. Steps blunt 180 opposite footed finger flip gnarly fakie. Half-flip tail wheels nollie nosepicker rail axle set. Nose grab bigspin risers wheels drop in camel back Wallows judo air. Flail lipslide casper speed wobbles transition NoMeansNo hanger kingpin. Rip grip kidney locals goofy footed spine skate key nose slide. Acid drop birdie mini ramp rad Japan air hip judo air. G-turn gap Transworld transfer snake fakie out coping hang ten. Acid drop freestyle lipslide steps hang-up fast plant Japan air. Rail slide pressure flip nose slide bank mini ramp transition shinner. Andy Levy switch 900 pump mongo cess slide locals manual.",
-      "core"        : true
-    },
-    {
-      "classid"     : "DGM  2130",
-      "title"       : "Digital Audio Essentials",
-      "crn"         : "4234",
-      "credits"     : "3",
-      "semester"    : "Spring",
-      "prerequisite": "DGM 1110",
-      "projects"    : "Multipage vacation website",
-      "software"    : "Text Wrangler (Macintosh) or Notepad++ (Windows)",
-      "technology"  : "Laptop or computer and Internet access",
-      "materials"   : "Web hosting account",
-      "track"       : "Internet",
-      "year"        : "2",
-      "description" : "Skate ipsum dolor sit amet, shoveit fast plant grind full-cab Shoe Goo griptape 360 nosegrind. Disaster grab rad hurricane shoveit fakie out slam. Heel flip feeble crooked grind boneless masonite launch ramp rails. Steps blunt 180 opposite footed finger flip gnarly fakie. Half-flip tail wheels nollie nosepicker rail axle set. Nose grab bigspin risers wheels drop in camel back Wallows judo air. Flail lipslide casper speed wobbles transition NoMeansNo hanger kingpin. Rip grip kidney locals goofy footed spine skate key nose slide. Acid drop birdie mini ramp rad Japan air hip judo air. G-turn gap Transworld transfer snake fakie out coping hang ten. Acid drop freestyle lipslide steps hang-up fast plant Japan air. Rail slide pressure flip nose slide bank mini ramp transition shinner. Andy Levy switch 900 pump mongo cess slide locals manual.",
-      "core"        : true
-    },
-    {
-      "classid"     : "DGM  2210",
-      "title"       : "3D Modeling and Animation Essentials",
-      "crn"         : "1231412",
-      "credits"     : "3",
-      "semester"    : "Spring",
-      "prerequisite": "DGM 1110",
-      "projects"    : "Multipage vacation website",
-      "software"    : "Text Wrangler (Macintosh) or Notepad++ (Windows)",
-      "technology"  : "Laptop or computer and Internet access",
-      "materials"   : "Web hosting account",
-      "track"       : "Animation",
-      "year"        : "2",
-      "description" : "Skate ipsum dolor sit amet, shoveit fast plant grind full-cab Shoe Goo griptape 360 nosegrind. Disaster grab rad hurricane shoveit fakie out slam. Heel flip feeble crooked grind boneless masonite launch ramp rails. Steps blunt 180 opposite footed finger flip gnarly fakie. Half-flip tail wheels nollie nosepicker rail axle set. Nose grab bigspin risers wheels drop in camel back Wallows judo air. Flail lipslide casper speed wobbles transition NoMeansNo hanger kingpin. Rip grip kidney locals goofy footed spine skate key nose slide. Acid drop birdie mini ramp rad Japan air hip judo air. G-turn gap Transworld transfer snake fakie out coping hang ten. Acid drop freestyle lipslide steps hang-up fast plant Japan air. Rail slide pressure flip nose slide bank mini ramp transition shinner. Andy Levy switch 900 pump mongo cess slide locals manual.",
-      "core"        : true,
-      "portfolioReview" : "images/Portfolio-review-box.png"
-    },
-    {
-      "classid"     : "DGM  2250",
-      "title"       : "Principles of Digital Design",
-      "crn"         : "512432",
-      "credits"     : "3",
-      "semester"    : "Spring",
-      "prerequisite": "DGM 1110",
-      "projects"    : "Multipage vacation website",
-      "software"    : "Text Wrangler (Macintosh) or Notepad++ (Windows)",
-      "technology"  : "Laptop or computer and Internet access",
-      "materials"   : "Web hosting account",
-      "track"       : "Cinema",
-      "year"        : "3",
-      "description" : "Skate ipsum dolor sit amet, shoveit fast plant grind full-cab Shoe Goo griptape 360 nosegrind. Disaster grab rad hurricane shoveit fakie out slam. Heel flip feeble crooked grind boneless masonite launch ramp rails. Steps blunt 180 opposite footed finger flip gnarly fakie. Half-flip tail wheels nollie nosepicker rail axle set. Nose grab bigspin risers wheels drop in camel back Wallows judo air. Flail lipslide casper speed wobbles transition NoMeansNo hanger kingpin. Rip grip kidney locals goofy footed spine skate key nose slide. Acid drop birdie mini ramp rad Japan air hip judo air. G-turn gap Transworld transfer snake fakie out coping hang ten. Acid drop freestyle lipslide steps hang-up fast plant Japan air. Rail slide pressure flip nose slide bank mini ramp transition shinner. Andy Levy switch 900 pump mongo cess slide locals manual.",
-      "core"        : true
-    },
-    {
-      "classid"     : "DGM  2271",
-      "title"       : "Principles of Web Design",
-      "crn"         : "3141234",
-      "credits"     : "3",
-      "semester"    : "Spring",
-      "prerequisite": "DGM 1110",
-      "projects"    : "Multipage vacation website",
-      "software"    : "Text Wrangler (Macintosh) or Notepad++ (Windows)",
-      "technology"  : "Laptop",
-      "materials"   : "Web hosting account",
-      "track"       : "Animation",
-      "year"        : "4",
-      "description" : "Skate ipsum dolor sit amet, shoveit fast plant grind full-cab Shoe Goo griptape 360 nosegrind. Disaster grab rad hurricane shoveit fakie out slam. Heel flip feeble crooked grind boneless masonite launch ramp rails. Steps blunt 180 opposite footed finger flip gnarly fakie. Half-flip tail wheels nollie nosepicker rail axle set. Nose grab bigspin risers wheels drop in camel back Wallows judo air. Flail lipslide casper speed wobbles transition NoMeansNo hanger kingpin. Rip grip kidney locals goofy footed spine skate key nose slide. Acid drop birdie mini ramp rad Japan air hip judo air. G-turn gap Transworld transfer snake fakie out coping hang ten. Acid drop freestyle lipslide steps hang-up fast plant Japan air. Rail slide pressure flip nose slide bank mini ramp transition shinner. Andy Levy switch 900 pump mongo cess slide locals manual.",
-      "core"        : true
-    }
-  ];
+         switch(tech) {
+             case "Laptop":
+                 tech = "images/svgs/laptop.svg";
+                 break;
+             case "Tablet":
+                 tech =  "images/svgs/tablet.svg";
+                 break;
+             case "Smartphone":
+                 tech =  "images/svgs/phone.svg";
+                 break;
+             case "Storage Drive":
+                 tech =  "images/svgs/hardDrive.svg";
+                 break;
+             case "Cloud Storage":
+                 tech =  "images/svgs/cloudStorage.svg";
+                 break;
+             case "DSLR":
+                 tech =  "images/svgs/dslr.svg";
+                 break;
+             case "Game Controller":
+                 tech =  "images/svgs/gameController.svg";
+                 break;
+             case "Wacom Pen":
+                 tech =  "images/svgs/wacomPen.svg";
+                 break;
+             case "Mic":
+                 tech =  "images/svgs/mic.svg";
+                 break;
+             case "Headphones":
+                 tech =  "images/svgs/headphones.svg";
+                 break;
+             case "Software":
+                 tech =  "images/svgs/desktop.svg";
+                 break;
+             case "Web Hosting":
+                 tech =  "images/svgs/hosting.svg";
+                 break;
+             default: tech = "images/svgs/exit.svg";
+                 break;
+         }
+         $scope.techImage = tech;
+         console.log($scope.techImage);
+         return $scope.techImage;
 
-
-      $scope.svgIcons = function(tech) {
-          if (tech = "Laptop") {
-              tech =  document.getElementById("techRequired").src="images/svgs/laptop.svg";
-              return tech;
-          }
       };
 
-        $scope.svgIcons($scope.classes.technology);
+        $scope.techImage;
 
-  });
+        $scope.coreClass;
+
+        $scope.classStading =function(core){
+            if (core == true){
+                $scope.coreClass ="Core";
+            }else{
+                $scope.coreClass ="Elective";
+            }
+        }
+
+
+
+
+  }]);
